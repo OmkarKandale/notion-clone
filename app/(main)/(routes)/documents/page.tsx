@@ -1,9 +1,5 @@
 const DocumentsPage = () => {
-	return (
-		<div className="div">
-			<div className="w-full h-full">Documents page</div>
-		</div>
-	);
+	return <div>This is a protected DocumentsPage</div>;
 };
 
 export default DocumentsPage;
