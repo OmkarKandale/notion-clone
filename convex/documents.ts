@@ -4,7 +4,7 @@ import { mutation, query } from "./_generated/server";
 import { Doc, Id } from "./_generated/dataModel";
 
 export const get = query({
-	handler: async (ctx, args) => {
+	handler: async (ctx) => {
 		const identity = await ctx.auth.getUserIdentity();
 
 		if (!identity) {
