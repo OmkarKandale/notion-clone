@@ -12,7 +12,7 @@ import {
 	CommandGroup,
 	CommandInput,
 	CommandList,
-} from "./ui/command";
+} from "@/components/ui/command";
 import { CommandItem } from "cmdk";
 import { File } from "lucide-react";
 
@@ -63,6 +63,7 @@ export const SearchCommand = () => {
 							value={`${document._id}-${document.title}`}
 							title={document.title}
 							onSelect={onSelect}
+							className="flex"
 						>
 							{document.icon ? (
 								<p className="mr-2 text-[18px]">{document.icon}</p>
